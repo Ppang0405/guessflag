@@ -34,6 +34,7 @@ class ViewController: UIViewController {
 //        countries.append("uk")
 //        countries.append("us")
         
+        // The += operator adds one array to another, so you can use it to add items quickly.
         countries += ["estonia", "france", "germany", "ireland", "italy",
                 "monaco", "nigeria", "poland", "russia", "spain", "uk", "us"]
         
@@ -41,6 +42,7 @@ class ViewController: UIViewController {
         button2.layer.borderWidth = 1 // layer is a lower layer of CG Layer, button know this layer = UIKit
         button3.layer.borderWidth = 1
         
+        // borderWidth and borderColor are properties on the layer behind all views. a part of CoreAnimation, and under UIKit
         button1.layer.borderColor =  UIColor.lightGray.cgColor // any color must auto convert to cgColor
         button2.layer.borderColor =  UIColor.lightGray.cgColor
         button3.layer.borderColor =  UIColor.lightGray.cgColor
@@ -50,7 +52,7 @@ class ViewController: UIViewController {
     
     func setUpFlag(action: UIAlertAction! = nil) {
         
-        // 2. shuffle array
+        // 2. shuffle array, use shuffled() if you want to return new array
         countries.shuffle()
         
         // 3.  random correct answer
