@@ -56,15 +56,23 @@
 		48E17AF724FF68E900583C62 /* GuessFlag */ = {
 			isa = PBXGroup;
 			children = (
-				48E17AF824FF68E900583C62 /* AppDelegate.swift */,
-				48E17AFA24FF68E900583C62 /* SceneDelegate.swift */,
+				48E17B0C24FF698800583C62 /* New Group */,
 				48E17AFC24FF68E900583C62 /* ViewController.swift */,
 				48E17AFE24FF68E900583C62 /* Main.storyboard */,
-				48E17B0124FF68EC00583C62 /* Assets.xcassets */,
-				48E17B0324FF68EC00583C62 /* LaunchScreen.storyboard */,
-				48E17B0624FF68EC00583C62 /* Info.plist */,
 			);
 			path = GuessFlag;
+			sourceTree = "<group>";
+		};
+		48E17B0C24FF698800583C62 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				48E17B0124FF68EC00583C62 /* Assets.xcassets */,
+				48E17AFA24FF68E900583C62 /* SceneDelegate.swift */,
+				48E17AF824FF68E900583C62 /* AppDelegate.swift */,
+				48E17B0624FF68EC00583C62 /* Info.plist */,
+				48E17B0324FF68EC00583C62 /* LaunchScreen.storyboard */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
