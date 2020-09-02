@@ -15,29 +15,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nH8-Tb-N9Q">
-                                <rect key="frame" x="107" y="100" width="200" height="100"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edB-L5-kPN">
-                                <rect key="frame" x="116" y="360" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nq5-ki-Es3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nq5-ki-Es3">
                                 <rect key="frame" x="107" y="230" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="italy"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edB-L5-kPN">
+                                <rect key="frame" x="107" y="360" width="200" height="100"/>
+                                <state key="normal" image="france"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nH8-Tb-N9Q">
+                                <rect key="frame" x="107" y="100" width="200" height="100"/>
+                                <state key="normal" image="uk"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="nH8-Tb-N9Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="2Vh-zp-sOD"/>
+                            <constraint firstItem="edB-L5-kPN" firstAttribute="top" secondItem="nq5-ki-Es3" secondAttribute="bottom" constant="30" id="CQu-dv-kuj"/>
+                            <constraint firstItem="edB-L5-kPN" firstAttribute="centerX" secondItem="nq5-ki-Es3" secondAttribute="centerX" id="IMZ-Cu-3w7"/>
+                            <constraint firstItem="nq5-ki-Es3" firstAttribute="top" secondItem="nH8-Tb-N9Q" secondAttribute="bottom" constant="30" id="ZnD-1l-MLJ"/>
                             <constraint firstItem="nH8-Tb-N9Q" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jv0-BU-Amm"/>
+                            <constraint firstItem="nq5-ki-Es3" firstAttribute="centerX" secondItem="nH8-Tb-N9Q" secondAttribute="centerX" id="y30-r9-4dr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="4C9-Mc-ZKo"/>
+                    <connections>
+                        <outlet property="button1" destination="nH8-Tb-N9Q" id="0rc-SJ-EK4"/>
+                        <outlet property="button2" destination="nq5-ki-Es3" id="0pX-HY-Maf"/>
+                        <outlet property="button3" destination="edB-L5-kPN" id="3Zp-sV-ij1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,4 +69,9 @@
             <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="france" width="200" height="100"/>
+        <image name="italy" width="200" height="100"/>
+        <image name="uk" width="200" height="100"/>
+    </resources>
 </document>
